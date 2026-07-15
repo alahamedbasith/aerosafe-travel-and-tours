@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    line-height: 1;
+  }
+  .material-symbols-outlined.filled {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+  /* Diagonal ribbon accent placed under section titles */
+  .ribbon {
+    position: relative;
+  }
+  .ribbon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 64%;
+    height: 6px;
+    background: linear-gradient(90deg, #cc1b36, #1273e3 50%, #1b7cf2);
+    transform: skewX(-18deg);
+  }
+  .ribbon-center::after {
+    left: 50%;
+    transform: translateX(-50%) skewX(-18deg);
+  }
+  /* Angled color-block divider between sections */
+  .angle-top {
+    clip-path: polygon(0 2.5vw, 100% 0, 100% 100%, 0 100%);
+  }
+  .angle-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.5vw), 0 100%);
+  }
+  .bg-grid {
+    background-image: linear-gradient(rgba(0, 84, 166, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 84, 166, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+/* ===== 2026 style layer (plain CSS, always emitted) ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.glass-dark {
+  background: rgba(10, 35, 66, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.aurora {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+}
+.text-gradient {
+  background: linear-gradient(120deg, #1b7cf2 0%, #1273e3 55%, #cc1b36 120%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.ring-gradient {
+  position: relative;
+}
+.ring-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(18, 115, 227, 0.5), rgba(204, 27, 54, 0.4));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Scroll reveal — only active when JS has loaded (no-JS safe) */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.js .reveal.show {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
