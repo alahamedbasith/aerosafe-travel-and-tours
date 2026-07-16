@@ -2,8 +2,7 @@ import SectionHeading from "../components/SectionHeading";
 import Counter from "../components/Counter";
 import ContactForm from "../components/ContactForm";
 
-const HERO =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuB5pcrLj3hk6uqpRTjQYHWiXcMbh615b5z2Cqrh64d-sCz-Upf8zS0V-LCXHL1KVyxXBxi1RM3d0hqniv5ejcVxD3-WwiM0i8bUv7v8OFV_78-2OilMA_ehUIqD291sxhgvDYzxX4vjmGlDgY35Mea0EgQtpz2z8NiygYNSxj6kcKYlogpJ-NLQ5hp-oXHenpYCwA1X315OmdTkfdNI4bMbL-U2XgAYJ2kNc8MpZuVobaRVgiChil2k";
+const HERO = "/hero.jpg";
 const ABOUT_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuCEO0bfd0zwNVJSXMzXSZt8dFOdQ2yITpIa27WgN2gt6SmGast6aQzgxyqY7pk265YWPjDO9trIyRkkjB9CudFUzGyuSOuPZcUmfsymCmMj34H2DlDH-by5qflVVHhScB88-dl-_s8E3h-ENrMh5gjmC1ZgowJQvxZMWHdx5B2-c9kKIbv4lwoy4GkA9qjftFRSuCgomz36v6cPczZFuZv1bZZZIXYLo5MHVTRjcv9DVleIwUtD9fyn";
 const MAPS_URL =
@@ -132,7 +131,7 @@ export default function HomePage() {
       {/* ============ HERO ============ */}
       <section className="relative bg-navy text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src={HERO} alt="A sleek corporate jet flying above a global cityscape at sunrise" className="w-full h-full object-cover opacity-40" />
+          <img src={HERO} alt="An airplane parked on the airport tarmac" className="w-full h-full object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/40"></div>
         </div>
         {/* aurora brand shapes */}
