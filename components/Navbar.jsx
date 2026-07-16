@@ -21,7 +21,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="Aerosafe Travel & Tourism"
-            className="h-9 md:h-12 w-auto"
+            className="h-8 md:h-10 w-auto"
           />
         </a>
 
