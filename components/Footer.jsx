@@ -46,13 +46,10 @@ export default function Footer() {
             <a className="text-white/80 hover:text-accent transition-colors w-fit" href="mailto:support@aerosafetravel.com">
               support@aerosafetravel.com
             </a>
-            <a className="text-white/80 hover:text-accent transition-colors w-fit" href="tel:+971521084524">
-              +971 52 108 4524
-            </a>
             <a className="text-white/80 hover:text-accent transition-colors w-fit" href="tel:+919944087106">
               +91 99440 87106
             </a>
-            <a className="text-white/80 hover:text-accent transition-colors w-fit" href="https://wa.me/971521084524">
+            <a className="text-white/80 hover:text-accent transition-colors w-fit"               href="https://wa.me/919944087106">
               WhatsApp Support
             </a>
             <span className="text-white/60">www.aerosafetravel.com</span>

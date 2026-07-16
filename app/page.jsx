@@ -129,7 +129,7 @@ export default function HomePage() {
   return (
     <div id="top">
       {/* ============ HERO ============ */}
-      <section className="relative bg-black text-white overflow-hidden min-h-[100dvh] flex items-center">
+      <section className="relative bg-black text-white overflow-hidden min-h-[calc(100vh-5rem)] flex flex-col justify-center">
         <div className="absolute inset-0">
           <img src={HERO} alt="An airplane parked on the airport tarmac" className="w-full h-full object-cover opacity-100" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
@@ -137,40 +137,34 @@ export default function HomePage() {
         {/* aurora brand shapes */}
         <div className="aurora w-96 h-96 bottom-0 right-10 bg-accent/30"></div>
 
-        <div className="relative z-10 w-full max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-16 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+        <div className="relative z-10 w-full max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           <div className="lg:col-span-7">
             <p className="font-body font-bold uppercase tracking-[0.25em] text-gradient mb-5 text-sm">
               Aerosafe Travel &amp; Tourism
             </p>
-            <h1 className="font-heading font-extrabold uppercase leading-[1.05] text-4xl md:text-6xl mb-6">
-              Your comprehensive partner for flights, hotels, and international visa services.
+            <h1 className="font-heading font-extrabold uppercase leading-[1.05] text-[clamp(1.5rem,5.5vh,3.5rem)] mb-4">
+              Corporate Travel Excellence with Personalized Service.
             </h1>
-            <p className="font-body text-lg text-white/80 max-w-2xl mb-9">
-              A Dubai-based B2B and B2C travel solutions company — combining technology and hospitality to make travel
-              smarter, simpler, and more meaningful.
+            <p className="font-body text-[clamp(1rem,0.55rem+1.1vw,1.375rem)] text-white/80 max-w-2xl mb-6">
+              Aerosafe Travel & Tourism helps businesses and travelers with flight bookings, hotel reservations,
+              international visas, travel insurance, airport transfers, and holiday packages across India and UAE.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contact"
-                className="bg-accent text-white font-body font-bold px-8 py-4 rounded-xl hover:bg-[#c1181f] transition-colors flex items-center gap-2"
+                className="bg-accent text-white font-body font-bold px-7 py-3 rounded-xl hover:bg-[#c1181f] transition-colors flex items-center gap-2"
               >
                 Get in Touch
                 <span className="material-symbols-outlined">arrow_forward</span>
               </a>
               <a
                 href="#services"
-                className="bg-white/10 text-white font-body font-bold px-8 py-4 rounded-xl hover:bg-white/20 transition-colors border border-white/30"
+                className="bg-white/10 text-white font-body font-bold px-7 py-3 rounded-xl hover:bg-white/20 transition-colors border border-white/30"
               >
                 Explore Services
               </a>
             </div>
           </div>
-        </div>
-        {/* angled bottom edge */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-          <svg viewBox="0 0 1440 80" className="block w-full h-12 md:h-20" preserveAspectRatio="none">
-            <path fill="#ffffff" d="M0,80 L1440,0 L1440,80 Z"></path>
-          </svg>
         </div>
       </section>
 
@@ -373,7 +367,7 @@ export default function HomePage() {
       <section className="py-24 bg-surface">
         <div className="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
           <SectionHeading kicker="Leadership" title="Messages From The Top" centered />
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
             <div className="bg-muted rounded-2xl p-8 border-t-4 border-primary flex flex-col">
               <div className="flex items-center gap-4 mb-5">
                 <div className="w-16 h-16 rounded-full bg-primary text-white font-heading font-extrabold text-2xl flex items-center justify-center">KS</div>
@@ -392,23 +386,6 @@ export default function HomePage() {
                 We&apos;re not stopping here — the future is about expansion, innovation, and global reach, continuously
                 investing in smarter travel tools, digital platforms, and world-class partnerships. Together, we will
                 continue to turn journeys into legacies.
-              </p>
-            </div>
-            <div className="bg-muted rounded-2xl p-8 border-t-4 border-accent flex flex-col">
-              <div className="flex items-center gap-4 mb-5">
-                <div className="w-16 h-16 rounded-full bg-accent text-white font-heading font-extrabold text-2xl flex items-center justify-center">M</div>
-                <div>
-                  <h3 className="font-heading font-bold uppercase text-navy text-lg">Mydeen</h3>
-                  <p className="font-body text-accent font-semibold text-sm uppercase tracking-wide">Co-Founder &amp; MD</p>
-                </div>
-              </div>
-              <p className="font-body text-on-surface-variant leading-relaxed">
-                Dear Partners and Clients, at Aerosafe our journey began with a simple goal — to make travel smarter,
-                easier, and more meaningful. What started with ticketing and visas has grown into a trusted global
-                platform serving corporates, agencies, freelancers, and individual travelers. For me, Aerosafe is not
-                just a business, it&apos;s a vision — where technology and hospitality work hand in hand to deliver
-                experiences that build trust and create opportunities. Thank you for being part of this journey. Together,
-                we are not just moving people, we are building a legacy in travel.
               </p>
             </div>
           </div>
@@ -483,19 +460,7 @@ export default function HomePage() {
           <SectionHeading kicker="Contact" title="Let's Plan Your Next Journey" centered />
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
             {/* Office info */}
-            <div className="lg:col-span-5 space-y-6">
-              <div className="bg-navy text-white rounded-2xl p-7">
-                <h3 className="font-heading font-bold uppercase text-lg mb-4 flex items-center gap-2">
-                  <span className="material-symbols-outlined text-accent filled">location_on</span> Corporate Office — Dubai, UAE
-                </h3>
-                <p className="font-body text-white/80 text-sm mb-4">
-                  102 A Block, Auto Centre Building, Port Saeed, Dubai, UAE
-                </p>
-                <div className="space-y-2 font-body text-sm">
-                  <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">mail</span> support@aerosafetravel.com</p>
-                  <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">call</span> +971 52 108 4524 | +971 52 786 9060</p>
-                </div>
-              </div>
+            <div className="lg:col-span-5 space-y-6 lg:flex lg:flex-col">
               <div className="bg-surface rounded-2xl p-7 shadow-card">
                 <h3 className="font-heading font-bold uppercase text-lg mb-4 flex items-center gap-2 text-navy">
                   <span className="material-symbols-outlined text-accent filled">location_on</span> Head Office — Chennai, India
@@ -511,11 +476,11 @@ export default function HomePage() {
                   </a>
                 </p>
                 <div className="space-y-2 font-body text-sm text-on-surface-variant">
-                  <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">mail</span> admin@aerosafetravel.com</p>
-                  <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">call</span> +91 99440 87106 | +91 97900 93060</p>
+                  <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">mail</span> support@aerosafetravel.com</p>
+                  <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">call</span> +91 99440 87106</p>
                 </div>
               </div>
-              <div className="relative h-64 md:h-72 rounded-2xl overflow-hidden shadow-card">
+              <div className="relative h-64 md:h-72 lg:h-auto lg:flex-1 rounded-2xl overflow-hidden shadow-card">
                 <iframe
                   title="Aerosafe Head Office — Ashok Nagar, Chennai"
                   src="https://www.google.com/maps?q=13.0378765,80.1983426&z=17&output=embed"
@@ -536,17 +501,17 @@ export default function HomePage() {
             </div>
 
             {/* Form */}
-            <div className="lg:col-span-7">
+          <div className="lg:col-span-7">
               <div className="bg-surface rounded-2xl p-7 md:p-10 shadow-card">
                 <h2 className="font-heading font-bold uppercase text-navy text-xl mb-6 border-b border-outline pb-4">
                   Professional Inquiry
                 </h2>
                 <ContactForm />
               </div>
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* ============ CLOSING BANNER ============ */}
       <section className="py-20 bg-navy text-white relative overflow-hidden text-center">
