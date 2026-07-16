@@ -129,7 +129,7 @@ export default function HomePage() {
   return (
     <div id="top">
       {/* ============ HERO ============ */}
-      <section className="relative bg-black text-white overflow-hidden">
+      <section className="relative bg-black text-white overflow-hidden min-h-screen min-h-[100dvh] flex items-center">
         <div className="absolute inset-0">
           <img src={HERO} alt="An airplane parked on the airport tarmac" className="w-full h-full object-cover opacity-100" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
