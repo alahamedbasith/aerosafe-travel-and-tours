@@ -129,15 +129,13 @@ export default function HomePage() {
   return (
     <div id="top">
       {/* ============ HERO ============ */}
-      <section className="relative bg-navy text-white overflow-hidden">
+      <section className="relative bg-black text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src={HERO} alt="An airplane parked on the airport tarmac" className="w-full h-full object-cover opacity-40" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/40"></div>
+          <img src={HERO} alt="An airplane parked on the airport tarmac" className="w-full h-full object-cover opacity-100" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
         </div>
         {/* aurora brand shapes */}
-        <div className="aurora w-[28rem] h-[28rem] -top-32 -right-24 bg-primary/40"></div>
         <div className="aurora w-96 h-96 bottom-0 right-10 bg-accent/30"></div>
-        <div className="aurora w-80 h-80 top-1/3 -left-24 bg-[#1B7CF2]/30"></div>
 
         <div className="relative z-10 max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-28 md:py-36 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           <div className="lg:col-span-7">
