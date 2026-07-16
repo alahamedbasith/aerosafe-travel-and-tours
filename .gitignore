@@ -6,3 +6,6 @@ out
 npm-debug.log*
 .env*.local
 .vercel
+
+*.err
+dev.log

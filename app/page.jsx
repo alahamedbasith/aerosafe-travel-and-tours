@@ -10,12 +10,12 @@ const MAPS_URL =
   "https://www.google.com/maps/place/4,+34th+St,+Ponnambalam+Colony,+Sector+7,+Ashok+Nagar,+Chennai,+Greater+Chennai,+Tamil+Nadu+600078,+India/@13.0378765,80.1983426,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5266d761316d91:0x6434afc96265a616!8m2!3d13.0378765!4d80.1983426!16s%2Fg%2F11w1fpptg9?entry=ttu&g_ep=EgoyMDI2MDcxMy4wIKXMDSoASAFQAw%3D%3D";
 
 const services = [
-  { icon: "flight", title: "Flights", body: "Direct partnerships with airlines for the best fares." },
-  { icon: "description", title: "UAE & International Visas", body: "Fast, reliable visa services." },
-  { icon: "apartment", title: "Hotels", body: "Access to worldwide accommodation." },
-  { icon: "shield", title: "Travel Insurance", body: "Full coverage options." },
-  { icon: "airport_shuttle", title: "Airport Transfers", body: "Convenient and safe connections." },
-  { icon: "explore", title: "Tour Packages", body: "Customized and group tours." },
+  { icon: "flight", title: "Air Ticket Booking", body: "Domestic and international flight bookings across all major airlines with competitive fares." },
+  { icon: "apartment", title: "Hotel Reservations", body: "Worldwide hotel bookings for business and leisure travelers at competitive rates." },
+  { icon: "description", title: "International Visa Assistance", body: "Tourist, Business and Visit Visa processing with professional guidance." },
+  { icon: "shield", title: "Travel Insurance", body: "Comprehensive travel insurance plans for international and domestic travel." },
+  { icon: "airport_shuttle", title: "Airport Transfer", body: "Reliable airport pickup and drop services with professional drivers." },
+  { icon: "explore", title: "Holiday Packages", body: "Customized domestic and international holiday packages for families, groups and corporate travelers." },
 ];
 
 const whoWeServe = [
@@ -90,10 +90,11 @@ const timeline = [
 ];
 
 const coreValues = [
-  { icon: "verified_user", title: "Trust", body: "Honest and transparent service." },
-  { icon: "lightbulb", title: "Innovation", body: "Smart tools and technology." },
-  { icon: "favorite", title: "Customer Satisfaction", body: "Superior customer care." },
-  { icon: "shield", title: "Reliability", body: "Reliable and consistent support." },
+  { icon: "verified_user", title: "Integrity", body: "We conduct business with honesty, transparency, and professionalism." },
+  { icon: "workspace_premium", title: "Excellence", body: "We continuously improve our services to exceed customer expectations." },
+  { icon: "shield", title: "Reliability", body: "We deliver dependable travel solutions with attention to every detail." },
+  { icon: "favorite", title: "Customer Satisfaction", body: "Our customers are at the heart of everything we do." },
+  { icon: "lightbulb", title: "Innovation", body: "We embrace technology and modern travel solutions to enhance customer experiences." },
 ];
 
 const achievements = [
@@ -179,22 +180,22 @@ export default function HomePage() {
       {/* ============ ABOUT ============ */}
       <section id="about" className="py-24 bg-surface">
         <div className="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
-          <SectionHeading kicker="About Us" title="Designing Journeys That Inspire" />
+          <SectionHeading kicker="Welcome" title="Aerosafe Travel & Tourism" />
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
             <div className="md:col-span-7 space-y-6">
               <p className="font-body text-on-surface-variant text-lg leading-relaxed">
-                At Aerosafe Travel &amp; Tourism LLC, we don&apos;t just arrange travel — rather, we design journeys that
-                inspire, connect, and transform. Founded in India, Aerosafe has grown from a promising travel provider
-                into a global B2B and B2C travel solutions partner, trusted by corporates, travel agencies, freelancers,
-                and individual explorers across the world.
-              </p>
-              <h3 className="font-heading font-bold uppercase text-navy text-xl">What We Do</h3>
-              <p className="font-body text-on-surface-variant leading-relaxed">
                 Aerosafe Travel &amp; Tourism LLC is a Dubai-based travel solutions company specializing in B2B and B2C
                 travel services, with a strong focus on innovation, cost efficiency, and service excellence — a trusted
-                partner for corporates, travel agencies, freelancers, and frequent travelers across the globe. What sets
-                us apart is our fusion of technology and hospitality through an advanced B2B online portal and personalized
-                VIP-style B2C services.
+                partner for corporates, travel agencies, freelancers, and frequent travelers across the globe. From our
+                beginnings in India to our operations in the UAE, we have grown into a global travel partner trusted by
+                clients worldwide.
+              </p>
+              <h3 className="font-heading font-bold uppercase text-navy text-xl">Who We Are</h3>
+              <p className="font-body text-on-surface-variant leading-relaxed">
+                We are a team of passionate travel professionals dedicated to making every journey smooth, safe, and
+                memorable. What sets us apart is our fusion of technology and hospitality — through an advanced B2B online
+                portal and personalized VIP-style B2C services — delivering reliable travel solutions with attention to
+                every detail.
               </p>
             </div>
             <div className="md:col-span-5 relative">
@@ -220,9 +221,9 @@ export default function HomePage() {
             ))}
           </div>
           <p className="font-body text-on-surface-variant text-center mt-8 max-w-3xl mx-auto">
-            Over the years, Aerosafe has forged direct partnerships with leading airlines, hotel chains, and global
-            service providers, ensuring unmatched pricing and priority services for clients. Our portfolio spans
-            corporate travel management, religious tours, and tailor-made leisure packages.
+            At Aerosafe, our commitment is to deliver travel services with honesty, professionalism, and care. We prioritize
+            customer satisfaction by offering transparent pricing, timely support, and personalized solutions. Our goal is
+            to make every travel experience safe, smooth, and memorable — building long-term trust with our clients.
           </p>
         </div>
       </section>
@@ -237,8 +238,8 @@ export default function HomePage() {
                 <span className="material-symbols-outlined text-accent filled">visibility</span> Vision
               </h2>
               <p className="font-body text-white/80 text-lg leading-relaxed">
-                To redefine the travel experience through technology-driven solutions, trusted partnerships, and
-                customer-centric service.
+                To be one of the most trusted and innovative travel solution providers in the UAE and globally,
+                recognized for reliability, transparency, and customer-focused service.
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 p-10 rounded-2xl">
@@ -246,8 +247,8 @@ export default function HomePage() {
                 <span className="material-symbols-outlined text-accent filled">flag</span> Mission
               </h2>
               <p className="font-body text-white/80 text-lg leading-relaxed">
-                To empower businesses and individuals with seamless access to global travel services, competitive
-                pricing, and premium customer care.
+                To provide seamless, reliable, and affordable travel solutions to individuals, businesses, and corporate
+                clients by combining technology, expertise, and personalized service.
               </p>
             </div>
           </div>
@@ -268,6 +269,30 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-heading font-bold uppercase text-navy text-lg mb-2">{s.title}</h3>
                 <p className="font-body text-on-surface-variant">{s.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ CORPORATE TRAVEL MANAGEMENT ============ */}
+      <section className="py-24 bg-surface">
+        <div className="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
+          <SectionHeading kicker="For Businesses" title="Corporate Travel Management" centered />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+            {[
+              "Corporate Air Ticket Booking",
+              "Hotel & Accommodation Arrangements",
+              "Business Visa Assistance",
+              "Travel Insurance for Employees",
+              "Airport Transfers & Transport",
+              "Group & Conference Travel",
+              "Customized Travel Policies & Reports",
+              "24/7 Dedicated Support",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-4 bg-muted rounded-2xl p-5 border-l-4 border-primary">
+                <span className="material-symbols-outlined text-primary filled text-2xl">check_circle</span>
+                <p className="font-body text-on-surface-variant font-medium">{item}</p>
               </div>
             ))}
           </div>
@@ -523,6 +548,19 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ============ CLOSING BANNER ============ */}
+      <section className="py-20 bg-navy text-white relative overflow-hidden text-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-sky to-accent opacity-20"></div>
+        <div className="relative z-10 max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
+          <h2 className="font-heading font-extrabold uppercase text-3xl md:text-5xl tracking-tight">
+            Your Journey, Our Priority
+          </h2>
+          <p className="font-body text-white/80 text-lg mt-4 max-w-2xl mx-auto">
+            Wherever you go, Aerosafe Travel &amp; Tourism is with you — making every trip safe, smooth, and memorable.
+          </p>
         </div>
       </section>
     </div>
