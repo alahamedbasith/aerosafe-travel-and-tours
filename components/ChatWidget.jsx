@@ -62,14 +62,14 @@ export default function ChatWidget() {
         <button
           onClick={() => setOpen(true)}
           aria-label="Open Aerosafe AI chat"
-          className="fixed bottom-6 right-44 sm:right-72 z-50 bg-primary hover:bg-primary-dark text-white rounded-full shadow-card-lg w-14 h-14 flex items-center justify-center transition-colors"
+          className="fixed bottom-6 left-6 z-50 bg-primary hover:bg-primary-dark text-white rounded-full shadow-card-lg w-14 h-14 flex items-center justify-center transition-colors"
         >
           <span className="material-symbols-outlined filled text-2xl">smart_toy</span>
         </button>
       )}
 
       {open && (
-        <div className="fixed bottom-6 right-6 z-50 w-[calc(100vw-3rem)] max-w-sm h-[32rem] max-h-[80vh] bg-surface rounded-2xl shadow-card-lg border border-outline flex flex-col overflow-hidden">
+        <div className="fixed bottom-6 left-6 z-50 w-[calc(100vw-3rem)] max-w-sm h-[32rem] max-h-[80vh] bg-surface rounded-2xl shadow-card-lg border border-outline flex flex-col overflow-hidden">
           {/* Header */}
           <div className="bg-navy text-white px-4 py-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
