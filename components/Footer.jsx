@@ -43,8 +43,8 @@ export default function Footer() {
 
           <div className="flex flex-col gap-3 font-body text-sm">
             <p className="font-heading font-bold uppercase tracking-widest text-white/50 mb-1 text-xs">Get in Touch</p>
-            <a className="text-white/80 hover:text-accent transition-colors w-fit" href="mailto:support.ae@aerosafetravel.com">
-              support.ae@aerosafetravel.com
+            <a className="text-white/80 hover:text-accent transition-colors w-fit" href="mailto:support@aerosafetravel.com">
+              support@aerosafetravel.com
             </a>
             <a className="text-white/80 hover:text-accent transition-colors w-fit" href="tel:+971521084524">
               +971 52 108 4524

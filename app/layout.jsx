@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
+import ChatWidget from "../components/ChatWidget";
 
 export const metadata = {
   title: "Aerosafe Travel & Tourism",
@@ -48,6 +49,8 @@ export default function RootLayout({ children }) {
         >
           <span className="material-symbols-outlined filled text-2xl">call</span>
         </a>
+
+        <ChatWidget />
       </body>
     </html>
   );

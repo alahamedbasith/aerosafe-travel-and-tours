@@ -495,7 +495,7 @@ export default function HomePage() {
                   102 A Block, Auto Centre Building, Port Saeed, Dubai, UAE
                 </p>
                 <div className="space-y-2 font-body text-sm">
-                  <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">mail</span> support.ae@aerosafetravel.com</p>
+                  <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">mail</span> support@aerosafetravel.com</p>
                   <p className="flex items-center gap-2"><span className="material-symbols-outlined text-accent text-sm">call</span> +971 52 108 4524 | +971 52 786 9060</p>
                 </div>
               </div>
