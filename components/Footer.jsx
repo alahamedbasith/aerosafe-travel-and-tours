@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 font-body text-xs text-white/50">
-          © {new Date().getFullYear()} Aerosafe Travel &amp; Tourism L.L.C. All rights reserved.
+          © {new Date().getFullYear()} Aerosafe Travel &amp; Tourism. All rights reserved.
         </div>
       </div>
     </footer>

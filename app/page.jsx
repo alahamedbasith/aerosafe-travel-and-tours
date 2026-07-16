@@ -143,7 +143,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-28 md:py-36 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           <div className="lg:col-span-7">
             <p className="font-body font-bold uppercase tracking-[0.25em] text-gradient mb-5 text-sm">
-              Aerosafe Travel &amp; Tourism L.L.C.
+              Aerosafe Travel &amp; Tourism
             </p>
             <h1 className="font-heading font-extrabold uppercase leading-[1.05] text-4xl md:text-6xl mb-6">
               Your comprehensive partner for flights, hotels, and international visa services.
@@ -184,7 +184,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
             <div className="md:col-span-7 space-y-6">
               <p className="font-body text-on-surface-variant text-lg leading-relaxed">
-                Aerosafe Travel &amp; Tourism LLC is a Dubai-based travel solutions company specializing in B2B and B2C
+                Aerosafe Travel &amp; Tourism is a Dubai-based travel solutions company specializing in B2B and B2C
                 travel services, with a strong focus on innovation, cost efficiency, and service excellence — a trusted
                 partner for corporates, travel agencies, freelancers, and frequent travelers across the globe. From our
                 beginnings in India to our operations in the UAE, we have grown into a global travel partner trusted by

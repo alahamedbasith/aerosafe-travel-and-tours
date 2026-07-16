@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
-  title: "Aerosafe Travel & Tourism L.L.C.",
+  title: "Aerosafe Travel & Tourism",
   description:
     "Your comprehensive partner for flights, hotels, and international visa services. B2B and B2C travel solutions from Dubai & Chennai.",
 };
