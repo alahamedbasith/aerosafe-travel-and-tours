@@ -19,10 +19,14 @@ export default function Footer() {
               />
             </div>
             <p className="font-body text-sm text-white/70 max-w-sm leading-relaxed">
-              We sincerely thank our esteemed clients, partners, and stakeholders for their continued trust and
-              collaboration. Your support drives our growth and innovation, and together, we look forward to building
-              lasting partnerships and shaping the future of travel with Aerosafe.
+              At Aerosafe, every journey is managed with precision and care. From a single executive trip to large-scale
+              corporate travel programs, our goal is to deliver a smooth travel experience backed by responsive support
+              and expert guidance.
             </p>
+            <div className="pt-1">
+              <p className="font-heading font-bold text-white text-base">Aerosafe Travel &amp; Tourism</p>
+              <p className="font-body text-sm text-white/70">Your Trusted Corporate Travel Partner.</p>
+            </div>
           </div>
 
           <div className="flex flex-col gap-3 font-body text-sm">

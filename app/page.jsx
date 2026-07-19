@@ -93,7 +93,6 @@ const coreValues = [
   { icon: "workspace_premium", title: "Excellence", body: "We continuously improve our services to exceed customer expectations." },
   { icon: "shield", title: "Reliability", body: "We deliver dependable travel solutions with attention to every detail." },
   { icon: "favorite", title: "Customer Satisfaction", body: "Our customers are at the heart of everything we do." },
-  { icon: "lightbulb", title: "Innovation", body: "We embrace technology and modern travel solutions to enhance customer experiences." },
 ];
 
 const achievements = [
@@ -129,16 +128,13 @@ export default function HomePage() {
   return (
     <div id="top">
       {/* ============ HERO ============ */}
-      <section className="relative bg-black text-white overflow-hidden min-h-[calc(100vh-5rem)] flex flex-col justify-center">
+      <section className="relative text-white overflow-hidden min-h-[calc(100vh-5rem)] flex flex-col justify-center">
         <div className="absolute inset-0">
           <img src={HERO} alt="An airplane parked on the airport tarmac" className="w-full h-full object-cover opacity-100" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
         </div>
-        {/* aurora brand shapes */}
-        <div className="aurora w-96 h-96 bottom-0 right-10 bg-accent/30"></div>
 
         <div className="relative z-10 w-full max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.55)" }}>
             <p className="font-body font-bold uppercase tracking-[0.25em] text-gradient mb-5 text-sm">
               Aerosafe Travel &amp; Tourism
             </p>
@@ -175,18 +171,19 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
             <div className="md:col-span-7 space-y-6">
               <p className="font-body text-on-surface-variant text-lg leading-relaxed">
-                Aerosafe Travel &amp; Tourism is a Dubai-based travel solutions company specializing in B2B and B2C
-                travel services, with a strong focus on innovation, cost efficiency, and service excellence — a trusted
-                partner for corporates, travel agencies, freelancers, and frequent travelers across the globe. From our
-                beginnings in India to our operations in the UAE, we have grown into a global travel partner trusted by
-                clients worldwide.
+                At Aerosafe Travel &amp; Tourism, we specialize in delivering reliable, efficient, and cost-effective
+                Corporate Travel Management solutions for businesses of all sizes. Based in Chennai, we help organizations
+                simplify business travel through professional planning, dedicated support, and personalized service.
               </p>
-              <h3 className="font-heading font-bold uppercase text-navy text-xl">Who We Are</h3>
               <p className="font-body text-on-surface-variant leading-relaxed">
-                We are a team of passionate travel professionals dedicated to making every journey smooth, safe, and
-                memorable. What sets us apart is our fusion of technology and hospitality — through an advanced B2B online
-                portal and personalized VIP-style B2C services — delivering reliable travel solutions with attention to
-                every detail.
+                We understand that corporate travel is more than booking flights and hotels—it's about ensuring every
+                business trip is seamless, productive, and stress-free. Our experienced team works closely with each client
+                to provide customized travel solutions that save time, control costs, and keep business travelers focused on
+                what matters most.
+              </p>
+              <p className="font-body text-on-surface-variant leading-relaxed">
+                Whether you're a startup, SME, or multinational company, Aerosafe becomes your trusted travel partner by
+                managing every aspect of your corporate travel requirements with speed, accuracy, and professionalism.
               </p>
             </div>
             <div className="md:col-span-5 relative">
@@ -229,8 +226,8 @@ export default function HomePage() {
                 <span className="material-symbols-outlined text-accent filled">visibility</span> Vision
               </h2>
               <p className="font-body text-white/80 text-lg leading-relaxed">
-                To be one of the most trusted and innovative travel solution providers in the UAE and globally,
-                recognized for reliability, transparency, and customer-focused service.
+                To become one of India's most trusted corporate travel management companies by building long-term
+                relationships through professionalism, innovation, and service excellence.
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 p-10 rounded-2xl">
@@ -238,8 +235,8 @@ export default function HomePage() {
                 <span className="material-symbols-outlined text-accent filled">flag</span> Mission
               </h2>
               <p className="font-body text-white/80 text-lg leading-relaxed">
-                To provide seamless, reliable, and affordable travel solutions to individuals, businesses, and corporate
-                clients by combining technology, expertise, and personalized service.
+                To provide businesses with dependable, efficient, and value-driven corporate travel solutions that enhance
+                productivity while delivering exceptional customer service and complete travel peace of mind.
               </p>
             </div>
           </div>
@@ -269,21 +266,20 @@ export default function HomePage() {
       {/* ============ CORPORATE TRAVEL MANAGEMENT ============ */}
       <section className="py-24 bg-surface">
         <div className="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
-          <SectionHeading kicker="For Businesses" title="Corporate Travel Management" centered />
+          <SectionHeading kicker="For Businesses" title="Our Corporate Travel Services" centered />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
             {[
-              "Corporate Air Ticket Booking",
-              "Hotel & Accommodation Arrangements",
-              "Business Visa Assistance",
-              "Travel Insurance for Employees",
-              "Airport Transfers & Transport",
-              "Group & Conference Travel",
-              "Customized Travel Policies & Reports",
-              "24/7 Dedicated Support",
+              { icon: "✈️", label: "Domestic & International Air Ticketing" },
+              { icon: "🏨", label: "Corporate Hotel Reservations" },
+              { icon: "🌍", label: "Business & International Visa Assistance" },
+              { icon: "🛡️", label: "Corporate Travel Insurance" },
+              { icon: "🚗", label: "Airport Transfers & Executive Transportation" },
+              { icon: "👥", label: "Group Business Travel" },
+              { icon: "🎯", label: "Meetings, Incentives, Conferences & Exhibitions (MICE)" },
             ].map((item) => (
-              <div key={item} className="flex items-center gap-4 bg-muted rounded-2xl p-5 border-l-4 border-primary">
-                <span className="material-symbols-outlined text-primary filled text-2xl">check_circle</span>
-                <p className="font-body text-on-surface-variant font-medium">{item}</p>
+              <div key={item.label} className="flex items-center gap-4 bg-muted rounded-2xl p-5 border-l-4 border-primary">
+                <span className="text-2xl leading-none">{item.icon}</span>
+                <p className="font-body text-on-surface-variant font-medium">{item.label}</p>
               </div>
             ))}
           </div>
